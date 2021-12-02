@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  /* This is for wire framing to see our rows/columns */
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body>
+
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-12 p-0">
+        <nav class="navbar navbar-expand-lg custom-font">
+          <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">SusGrounds & Co.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active text-light" aria-current="page" href="#coffeeshop">Shop</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+    <!-- image row -->
+    <div class="row hero-img align-items-center">
+      <div class="col-md-4 ms-md-5 ">
+        <div class="text-light shadow rounded hero-card p-3 d-none d-md-block">
+          <i class="mdi mdi-coffee mdi-24px mdi-spin"></i>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum enim dolores quis amet animi, alias
+            blanditiis voluptate ipsa vero, explicabo minima ex architecto iste illo eos consectetur mollitia sequi
+            impedit.</p>
+          <div class="d-flex justify-content-end">
+            <button class="btn shop-color text-light">buy beans meow</button>
+          </div>
+        </div>
+        <!-- make a card looking thing here -->
+      </div>
+    </div>
+    <div class="row shop-color text-light custom-font">
+      <div class="col-12 p-1 text-center">
+        <!-- shop for beans row -->
+        <h3>shop for beans</h3>
+      </div>
+    </div>
+    <div class="row pt-5 shop" id="coffeeshop">
+      <!-- all of the beansssss -->
+      <!-- NOTE using col-md-3 means that on a md screen and bigger will be a col-3 but otherwise will default to col-12  -->
+      <!-- NOTE if you want to move items in a column, make sure to make that column a flex-box -->
+      <div class="col-md-3 d-flex justify-content-center mb-5 position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/dd05/4758/b7498ef006d7f67f0029952d496c9f1b?Expires=1639353600&Signature=Uy7y5XWK5Vm34Oz5dK01PSTDmBoJFYUB3MjjjdWsgU7D~WeVGey1COlFlZN8TqPvbyaXy05qPGyNHveP0gXsmc~C7Sl1qfce3nb2rYtBT5fDHNCytCnm0nycN--9xazRWib-n147lACcFG2TVLFnMyuzbzOvH-tVtgwqPh82TWtwfkYd4Qmd1gbe~1KF8owHpGM9xXzhK-hksiSItbrmiGQsW05IhC2c7laCAO0M5Gw6XgoXsI65h1YeZ7hrHX7gwWmzkmuA~ZkKRVnw13K74s430Z-8YYsUdt~t~iIipFTwR5Zy6AWq6afEQCtjBFHQptLxMwDpgf3PMs38aeMHnA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          class="rounded object-fit-contain" alt="">
+        <button class="btn shop-button px-5 spill position-absolute custom-font">Buy</button>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center mb-5 position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/9583/7d9d/b7d6c70d17765a9b6b08966c4a166b6d?Expires=1639353600&Signature=VxpdxjCTRCcxTn8oEyTX9C6pNte2AEC1d2L03VBpQtd4XvnjHwZHvfTnxDWo1ZDWLTe6LrJX1Ib0wTKFQgaiOlEueif1IRKGT8f-3rwziYN0T7yHmGFTY4IJozf7LmkWzw1nQftf1LkrJ0tTFnRF4QwSUw~nnxGgLGVOgShE4q-H5WrlvgWSv06~m0gOqoRs8xaa6K0hlyUIqPwWXfFOEgxjlS7ZTzPrKqaufOACsAsN-QLtg45AlvOoGdss-NPkw5LTYJz6AkcoXx2VpPe9ANV8i44T30l40yw9M7tOrtZscWSjpVXzIJ3Y4EkIdvE5UMjJws~FlaXfuGTRh8hnAA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          class="rounded object-fit-contain" alt="">
+        <button class="btn shop-button px-5 spill position-absolute custom-font">Buy</button>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center mb-5 position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/a85d/de42/2496fba66f942058051b58070ae7e9a0?Expires=1639353600&Signature=fwUMyNVfjtw4h5t~9FUb9GXuNC23jcpe2HiBA6LoeWEDymjis6dvyjnnheh8TMXUQjt6Vs~lvXxrt3mOs2uuaGqckJ7I9bEbzY73U2IZxdW6vI0tHeh1eZuJ9QR9WX0AWKtZsAdkesPFlQvGet~4rxDPi-wySBBjQPZ0uortMsTSmUG3yadt6wIfIuQz9AO~I8m3E7kw6DJG~cL5o2oJEjGFS8Yz8r1kBKKgiEyhRv9bCQqMAy2sYlo6yUYIxrKm5fy5hR30UYqMBiT5EQJnLYA7y5ryi5VXbE0YCdDQQjFAi-SJJiK7ZgSsMepTG1a4iNaAnIG4FJB9y048Letmyg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          class="rounded object-fit-contain" alt="">
+        <button class="btn shop-button px-5 spill position-absolute custom-font">Buy</button>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center mb-5 position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/6167/cd37/90e5ba24fc744484ffab3f21fab0dd0f?Expires=1639353600&Signature=E3OrNPf01dueY009rD6mAnWl2igOArrIkLz5E7Vhj1I-rc1UJldfq5kHzmchKh~M3o1cCe7iAJB7RglTqIlJeTIXaOTnv1MPFhbtoRFy1-X6i2FZ6~ShQy2s1VLUfzAC75eSNKbxaRXpvOMX7SqjRHMs6ZptSb-HqnROUKgfmG~L7XE~rK2VZ2QFbKNc0NBBIptwT3C4ntUuwM3fKnteaB2I2ta~fONNJYPmnAkTopogXobgVFYqhf3h26bOUMJqY4fmjFYwQUUZbCevvdWK2L1NJzbxXeY3WW-wJLuCCqgiEvZ6iiY3zFN6j~Dm6hil~I0z5h-1wkCzATgQ6dipew__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          class="rounded object-fit-contain" alt="">
+        <button class="btn shop-button px-5 spill position-absolute custom-font">Buy</button>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center mb-5 position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/5f48/d525/f17641a0004a1a46abef9e5cd272bb48?Expires=1639353600&Signature=dI8Sor1uFdi9yhn7Kj6KlDP~1aO07KOPmrgBs7qBKqmPCiG-ks~dx-A34UwivVbCvtxzkxP3fXTnSl4DvtVlS778rS9w90nxQFDjm8qS9Klkgt5ekOQFRYMt5ZOZybT6iWgDPnBhflwtue2kNzPq-4AvyQSs8NhZmmflm13QU0EX0P-elJSLu9kwT865QZX60rA88DGKjHpJos-gUS304o8z4PcU4Yzcf~h54gnXg9qxLjE-gzqtrI5OzuYci4LFJoDhjV6WaTUlNotETGlnZan5EEttdQaiES04loBpRfL6l0hDie36yNL-MTf3096WMr3uXNsGD5SsV0F53VY1dw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          class="rounded object-fit-contain" alt="">
+        <button class="btn shop-button px-5 spill position-absolute custom-font">Buy</button>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center mb-5 position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/8db8/50d5/171aba8e2506f807f46bfb8e7a807ac9?Expires=1639353600&Signature=GBZQ~SOUI88T-CdC-vDb4l-l2P-9VEcGxyLqXxYq-JdlC6jqmBsS6F0-o4H1LGZC1qyebMlobmE-fyOECnVkWewSfVSQIB9Wf52KaCEI7QIOzZ~~bBIg9HnPTxPnP9r4rhQ-mUc49FyuYpBQvFH3kA3KaEfSc1VOoFWm~R7~4b9b2Vie3KUR3Akc00-9sK3gFLBBdwHihvifwGuEB41atWp3rjEw4gK6zto0MVAMEPdgGWBB2BOKGlNpsrvX5Ij2Ur6P85fqChqteAXQmJxAw3NDeAved8JT9BwMAc4SmpcFJM8OjIw1q5KkGEexGjHXQT5tPMOUvGSGz6CO7BHwpw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          class="rounded object-fit-contain" alt="">
+        <button class="btn shop-button px-5 spill position-absolute custom-font">Buy</button>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center mb-5 position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/7b28/f122/4d5c7d3cc52d6e659bb2ab2083d34e75?Expires=1639353600&Signature=gtftguQdIJhoEuydEGztvZ4nXj1EEs7y1AjVn1RntSoktdZQAIeDL91Zu6Z32p-A5YCARm06fm2233apZz-rSn8Tl4RrZf2rQfhorKtSqpvcQFNptIaLq0wJiikadUQuprKFixKscyYFFWXKPI9L7aw2wwqpRmUkSMKXVTxgQl6EXB9p5AM3QB1vziWG601HHDzze1hp1g~et78Eoq9b7O~JiiiM4mUFXFea5VkZQoDQUwdLmYSp4Y5TcFTxrSdGs8w-7zZtmgZMNAon9pZQUZWMXDpnP0CWzTaDCC-m8YU6~y6tXJvebhmjlo2BgXb7DBeZu~JKje59fDWhd8Kurw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          class="rounded object-fit-contain" alt="">
+        <button class="btn shop-button px-5 spill position-absolute custom-font">Buy</button>
+      </div>
+      <div class="col-md-3 d-flex justify-content-center mb-5 position-relative">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/ce75/f63f/8170d346db7462f65e257502533dafee?Expires=1639353600&Signature=eJbwJq5z12Q8C8IO-0N8oODGDTCQIwuvgEx6GdRr1rOiVHGc8bySjX~VnC-4kOeKrED11vvRpuQSVO6PCkcH~zVnwJsIDR74753idjs6QScG6pkepG5QXR9ivUqm7NL2UR06BIlttNxzLAUpcqGFBsu763--T15AY7rizUyNaIVsnARePGUcnZmpBtIpssv4vN~yNDsi25YMajwd1FpuyHMGekn~d2TKjdVJKJtnbosCgdt0lUW1pB08tXfDaNNiK6fUN6SBS4kfg0WslR8~wfFtqYuVweHy3jl0XMHNYxmzJmzjU8~QAjT28URuGSRAVPspbd5NWTamaLSLsMMK8g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          class="rounded object-fit-contain" alt="">
+        <button class="btn shop-button px-5 spill position-absolute custom-font">Buy</button>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
